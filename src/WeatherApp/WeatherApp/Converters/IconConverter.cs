@@ -20,7 +20,7 @@ namespace WeatherApp.Converters
                 case "01d":
                     return "Images/sun.png";
                 case "02n":
-                case "02D":
+                case "02d":
                 case "04d":
                     return "Images/cloud.png";
                 case "10d":
