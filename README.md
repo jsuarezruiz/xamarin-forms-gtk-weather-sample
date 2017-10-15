@@ -22,6 +22,14 @@
 * Xamarin add-ons for Visual Studio 3.2.1.64 or higher (available via the Visual Studio installer)
 * __Visual Studio Community Edition is fully supported!__
 
+## Xamarin.Forms 3.0 Feed
+
+The **Xamarin.Forms 3.0** preview is published to a custom NuGet feed. To get it:
+
+- Add a new source to your NuGet Manager: [https://www.myget.org/F/xamarinforms-dev/api/v3/index.json](https://www.myget.org/F/xamarinforms-dev/api/v3/index.json).
+- Check Pre-Release.
+- Select and install the package with the  name **3.0.0.201-gtk**.
+
 ## Setup
 
 **Download** or clone the repository. This is a solution with two projects.
