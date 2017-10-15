@@ -16,18 +16,43 @@ namespace WeatherApp.Converters
             switch(iconType)
             {
                 case "01n":
-                    return "Images/moon.png";
+                    if(Device.RuntimePlatform == Device.GTK)
+                        return "Images/moon.png";
+                    else if (Device.RuntimePlatform == Device.UWP)
+                        return "Assets/moon.png";
+                    else
+                        return "moon.png";
                 case "01d":
-                    return "Images/sun.png";
+                    if (Device.RuntimePlatform == Device.GTK)
+                        return "Images/sun.png";
+                    else if (Device.RuntimePlatform == Device.UWP)
+                        return "Assets/sun.png";
+                    else
+                        return "sun.png";
                 case "02n":
-                case "02D":
+                case "02d":
                 case "04d":
-                    return "Images/cloud.png";
+                    if (Device.RuntimePlatform == Device.GTK)
+                        return "Images/cloud.png";
+                    else if (Device.RuntimePlatform == Device.UWP)
+                        return "Assets/cloud.png";
+                    else
+                        return "cloud.png";
                 case "10d":
-                    return "Images/rain.png";
+                    if (Device.RuntimePlatform == Device.GTK)
+                        return "Images/rain.png";
+                    else if (Device.RuntimePlatform == Device.UWP)
+                        return "Assets/rain.png";
+                    else
+                        return "rain.png";
+                default:
+                    if (Device.RuntimePlatform == Device.GTK)
+                        return "Images/cloud.png";
+                    else if (Device.RuntimePlatform == Device.UWP)
+                        return "Assets/cloud.png";
+                    else
+                        return "cloud.png";
             }
-
-            return value;
         }
 
         public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)

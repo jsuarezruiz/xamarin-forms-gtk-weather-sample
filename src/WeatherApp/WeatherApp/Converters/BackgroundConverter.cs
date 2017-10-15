@@ -14,11 +14,32 @@ namespace WeatherApp.Converters
             var condition = value.ToString();
 
             if (condition.Contains("cloud"))
-                return "Images/clouds-background.jpg";
+            {
+                if (Device.RuntimePlatform == Device.GTK)
+                    return "Images/clouds-background.jpg";
+                else if (Device.RuntimePlatform == Device.UWP)
+                    return "Assets/clouds-background.jpg";
+                else
+                    return "clouds-background.jpg";
+            }
             else if (condition.Contains("rain"))
-                return "Images/rain-background.jpg";
+            {
+                if (Device.RuntimePlatform == Device.GTK)
+                    return "Images/rain-background.jpg";
+                else if (Device.RuntimePlatform == Device.UWP)
+                    return "Assets/rain-background.jpg";
+                else
+                    return "rain-background.jpg";
+            }
             else if (condition.Contains("sun") || (condition.Contains("clear sky")))
-                return "Images/sun-background.jpg";
+            {
+                if (Device.RuntimePlatform == Device.GTK)
+                    return "Images/sun-background.jpg";
+                else if (Device.RuntimePlatform == Device.UWP)
+                    return "Assets/sun-background.jpg";
+                else
+                    return "sun-background.jpg";
+            }
             else
                 return string.Empty;
         }

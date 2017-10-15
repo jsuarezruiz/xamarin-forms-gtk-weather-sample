@@ -47,7 +47,7 @@
                     RowSpacing="0"
                     BackgroundColor="{StaticResource AccentColor}">
                     <Grid.RowDefinitions>
-                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="150" />
                         <RowDefinition Height="Auto" />
                         <RowDefinition Height="*" />
                     </Grid.RowDefinitions>
@@ -55,11 +55,6 @@
                         Grid.Row="0"
                         Grid.RowSpan="3"
                         Source="{Binding Condition, Converter={StaticResource BackgroundConverter}}"
-                        Style="{StaticResource BackgroundStyle}"/>
-                    <Image 
-                        Grid.Row="0"
-                        Grid.RowSpan="3"
-                        Source="shadow-overlay.png"
                         Style="{StaticResource BackgroundStyle}"/>
                     <Grid      
                         Grid.Row="0">
@@ -72,12 +67,6 @@
                         Text="{Binding Condition}"
                         Style="{StaticResource ConditionTextStyle}"/>
                 </Grid>
-                <Image  
-                    Grid.Row="0"
-                    Aspect="Fill"
-                    Margin="0,-1,0,-1"
-                    Source="curve-mask.png"
-                    VerticalOptions="End"/>
                 <Grid
                     Grid.Row="1">
                     <controls:HorizontalList 
