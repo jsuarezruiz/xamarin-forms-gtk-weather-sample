@@ -22,13 +22,11 @@
 * Xamarin add-ons for Visual Studio 3.2.1.64 or higher (available via the Visual Studio installer)
 * __Visual Studio Community Edition is fully supported!__
 
-## Xamarin.Forms 3.0 Feed
+## Xamarin.Forms Nightly Feed
 
-The **Xamarin.Forms 3.0** preview is published to a custom NuGet feed. To get it:
+To test this project you must add this Nuget source in Visual Studio:
 
-- Add a new source to your NuGet Manager: [https://www.myget.org/F/xamarinforms-dev/api/v3/index.json](https://www.myget.org/F/xamarinforms-dev/api/v3/index.json).
-- Check Pre-Release.
-- Select and install the package with the  name **3.0.0.201-gtk**.
+- Xamarin.Forms Nightly: [https://www.myget.org/F/xamarinforms-ci/api/v2](https://www.myget.org/F/xamarinforms-ci/api/v2)
 
 ## Setup
 
