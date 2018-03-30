@@ -28,7 +28,7 @@
 
 **Rebuild** the solution to get all neccesary **NuGet** packages.
 
-Access to **AppSettings.cs** file available in the Portable Class Library to introduce city.
+Access to **AppSettings.cs** file available in the .NET Standard Library to introduce city.
 
 Enjoy!
 
