@@ -22,12 +22,6 @@
 * Xamarin add-ons for Visual Studio 3.2.1.64 or higher (available via the Visual Studio installer)
 * __Visual Studio Community Edition is fully supported!__
 
-## Xamarin.Forms Nightly Feed
-
-To test this project you must add this Nuget source in Visual Studio:
-
-- Xamarin.Forms Nightly: [https://www.myget.org/F/xamarinforms-ci/api/v2](https://www.myget.org/F/xamarinforms-ci/api/v2)
-
 ## Setup
 
 **Download** or clone the repository. This is a solution with two projects.
